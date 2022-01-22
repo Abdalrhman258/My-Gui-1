@@ -1,0 +1,55 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local PetSimulatorX = Instance.new("TextButton")
+local DragonBallOnlineGenerations = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+main.Position = UDim2.new(0.278415024, 0, 0.292153597, 0)
+main.Size = UDim2.new(0, 425, 0, 248)
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel.Size = UDim2.new(0, 425, 0, 38)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "The Gui Of Two Games  |  Made By Abdalrhman258"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+PetSimulatorX.Name = "Pet Simulator X!"
+PetSimulatorX.Parent = main
+PetSimulatorX.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+PetSimulatorX.Position = UDim2.new(0.0470588244, 0, 0.237903222, 0)
+PetSimulatorX.Size = UDim2.new(0, 183, 0, 170)
+PetSimulatorX.Font = Enum.Font.SourceSans
+PetSimulatorX.Text = "Pet Simulator X!"
+PetSimulatorX.TextColor3 = Color3.fromRGB(0, 0, 0)
+PetSimulatorX.TextSize = 30.000
+PetSimulatorX.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Pojken123/psxx/main/p"))()
+end)
+
+DragonBallOnlineGenerations.Name = "Dragon Ball\\nOnline Generations"
+DragonBallOnlineGenerations.Parent = main
+DragonBallOnlineGenerations.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+DragonBallOnlineGenerations.Position = UDim2.new(0.536470592, 0, 0.237903222, 0)
+DragonBallOnlineGenerations.Size = UDim2.new(0, 183, 0, 170)
+DragonBallOnlineGenerations.Font = Enum.Font.SourceSans
+DragonBallOnlineGenerations.Text = "Dragon Ball\nOnline Generations"
+DragonBallOnlineGenerations.TextColor3 = Color3.fromRGB(0, 0, 0)
+DragonBallOnlineGenerations.TextSize = 25.000
+DragonBallOnlineGenerations.MouseButton1Down:connect(function()
+	getgenv().ToggleKey = "RightAlt"
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HimikoToga1474/Ahegao-Hub/master/Main.Lua"))()
+end)
